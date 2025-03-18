@@ -13,11 +13,11 @@ RUN npm install
 # Copy the rest of the application
 COPY . .
 
-# Build the Next.js project
+# Build the Next.js project (only for production)
 RUN npm run build
 
 # Expose the port Next.js runs on
 EXPOSE 3000
 
-# Start the app
+# Default command (will be overridden by docker-compose in dev mode)
 CMD ["npm", "start"]
