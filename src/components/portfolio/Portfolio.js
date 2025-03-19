@@ -62,7 +62,7 @@ const projects = [
   },
   { 
     id: 7, 
-    title: "MetaSpark", 
+    title: "Toyou", 
     category: "Music Production", 
     image: "/assets/Port_P7.png", 
     link: "https://open.spotify.com/artist/3dNmdZN1skt8fVuLMDECwl?si=bjScHszvSGWFZ1nKseROnw",
@@ -71,7 +71,7 @@ const projects = [
   },
   { 
     id: 8, 
-    title: "MetaSpark", 
+    title: "90 Miles", 
     category: "Music Production", 
     image: "/assets/Port_P8.png", 
     link: "https://open.spotify.com/artist/1PclBjYMDv5llwo1JmTooN?si=qk773ZtWTGy_SLH04fWLAA",
