@@ -17,6 +17,15 @@ const projects = [
   },
   { 
     id: 2, 
+    title: "Bounty Pub", 
+    category: "Web Development", 
+    image: "/assets/Port_P09.png", 
+    link: "https://bountypub.club/",
+    buzzwords: ["React", "Tailwind", "Vite", "Framer Motion", "API"],
+    description: "A Website for the BountyPub Community on Discord. Its a website that shows the current Bounty Events and the Leaderboards. It gets all the Data purly of Google Sheets."
+  },
+  { 
+    id: 3, 
     title: "Portfolio Website", 
     category: "Web Development", 
     image: "/assets/Port_P2.png", 
@@ -25,7 +34,7 @@ const projects = [
     description: "Personal Portfolio Website about my work!"
   },
   { 
-    id: 3, 
+    id: 4, 
     title: "Hitless Guides - Sceleton Project", 
     category: "Web Development", 
     image: "/assets/Port_P3.png", 
@@ -34,7 +43,7 @@ const projects = [
     description: "Hitless Guides was one of my first projects as a OnePager for the Team Hitless Community. You can search for Guides on specific Games. Its fully functional, just missing the content."
   },
   { 
-    id: 4, 
+    id: 5, 
     title: "Music Portfolio", 
     category: "Web Development", 
     image: "/assets/Port_P4.png", 
@@ -43,7 +52,7 @@ const projects = [
     description: "A Music Portfolio website purely out of HTML and CSS. It was one of my starting Projects that I gonna rebuild in the future."
   },
   { 
-    id: 5, 
+    id: 6, 
     title: "Coreborn", 
     category: "Game Development", 
     image: "/assets/Port_P5.png", 
@@ -52,7 +61,7 @@ const projects = [
     description: "Created whole Soundscape of a multiplayer Game project and smaller games (OST,SFX,Atmo, Mix&Master)."
   },
   { 
-    id: 6, 
+    id: 7, 
     title: "dain.", 
     category: "Music Production", 
     image: "/assets/Port_P6.png", 
@@ -61,7 +70,7 @@ const projects = [
     description: "Main Artist Name for LoFi and Synthwave"
   },
   { 
-    id: 7, 
+    id: 8, 
     title: "Toyou", 
     category: "Music Production", 
     image: "/assets/Port_P7.png", 
@@ -70,7 +79,7 @@ const projects = [
     description: "Toyou is the alias for Club Music."
   },
   { 
-    id: 8, 
+    id: 9, 
     title: "90 Miles", 
     category: "Music Production", 
     image: "/assets/Port_P8.png", 
