@@ -19,7 +19,7 @@ const projects = [
     id: 2, 
     title: "Bounty Pub", 
     category: "Web Development", 
-    image: "/assets/Port_P09.png", 
+    image: "/assets/Port_09.png", 
     link: "https://bountypub.club/",
     buzzwords: ["React", "Tailwind", "Vite", "Framer Motion", "API"],
     description: "A Website for the BountyPub Community on Discord. Its a website that shows the current Bounty Events and the Leaderboards. It gets all the Data purly of Google Sheets."
