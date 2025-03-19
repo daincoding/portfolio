@@ -32,7 +32,7 @@ const services = [
 const Services = () => {
   return (
     <section className="service">
-      <h3 className="h3 service-title">What I'm Doing</h3>
+      <h3 className="h3 service-title">This is what I do...</h3>
 
       <ul className="service-list">
         {services.map((service, index) => (

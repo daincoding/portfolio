@@ -1,4 +1,4 @@
-import Clients from "./Clients"
+
 import Services from "./Services"
 import Testimonials from "./Testimonials"
 
