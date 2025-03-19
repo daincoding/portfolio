@@ -875,6 +875,25 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.badge {
+  background: var(--bg-gradient-yellow-1);
+  color: white; /* Darker text for contrast */
+  font-size: 8px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .filter-list { display: none; }
 
 .filter-select-box {
@@ -1009,8 +1028,19 @@ main {
 
 .project-item > a:hover img { transform: scale(1.1); }
 
+.project-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  font-style: italic;
+}
+
 .project-title,
-.project-category { margin-left: 10px; }
+.project-category, 
+.project-description,
+.badges { margin-left: 10px; }
 
 .project-title {
   color: var(--white-2);
@@ -1744,7 +1774,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+  .project-list { grid-template-columns: repeat(2, 1fr); }
 
 
 

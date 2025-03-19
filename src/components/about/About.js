@@ -1,4 +1,6 @@
-
+import Clients from "./Clients"
+import Services from "./Services"
+import Testimonials from "./Testimonials"
 
 const About = () => {
   return (
@@ -23,7 +25,8 @@ const About = () => {
             message and identity in the most creative way. I created web design for many famous brand companies.
           </p>
         </section>
-    
+    <Services />
+    <Testimonials />
     </article>
   )
 }
