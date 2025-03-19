@@ -8,57 +8,75 @@ import { FaEye } from "react-icons/fa";
 const projects = [
   { 
     id: 1, 
-    title: "Finance", 
-    category: "web development", 
-    image: "/assets/images/project-1.jpg", 
-    link: "https://finance.example.com",
-    buzzwords: ["React", "Tailwind", "API"],
-    description: "A modern finance management platform with seamless API integration."
+    title: "Hitless Stats - (WIP GitHub Only)", 
+    category: "Web Development", 
+    image: "/assets/Port_P1.png", 
+    link: "https://github.com/daincoding/hitless-stats",
+    buzzwords: ["React", "Tailwind", "API", "MySQL", "User Management", "Framer Motion"],
+    description: "A FullStack Project with Admin Area and User Management for Team Hitless Community Member to track their challenge runs and showcase statistics!"
   },
   { 
     id: 2, 
-    title: "Orizon", 
-    category: "web development", 
-    image: "/assets/images/project-2.png", 
-    link: "https://orizon.example.com",
-    buzzwords: ["Next.js", "GraphQL", "Serverless"],
-    description: "An innovative project management tool leveraging GraphQL for real-time data."
+    title: "Portfolio Website", 
+    category: "Web Development", 
+    image: "/assets/Port_P2.png", 
+    link: "https://panske.dev",
+    buzzwords: ["Next.js", "JS", "CSS"],
+    description: "Personal Portfolio Website about my work!"
   },
   { 
     id: 3, 
-    title: "Fundo", 
-    category: "web design", 
-    image: "/assets/images/project-3.jpg", 
-    link: "https://fundo.example.com",
-    buzzwords: ["Figma", "CSS", "Animations"],
-    description: "A sleek, animated landing page designed with Figma and CSS."
+    title: "Hitless Guides - Sceleton Project", 
+    category: "Web Development", 
+    image: "/assets/Port_P3.png", 
+    link: "https://hitlessguides.vercel.app/",
+    buzzwords: ["Figma", "Chakra UI", "TypeScript"],
+    description: "Hitless Guides was one of my first projects as a OnePager for the Team Hitless Community. You can search for Guides on specific Games. Its fully functional, just missing the content."
   },
   { 
     id: 4, 
-    title: "Brawlhalla", 
-    category: "applications", 
-    image: "/assets/images/project-4.png", 
-    link: "https://brawlhalla.example.com",
-    buzzwords: ["Game Dev", "Unity", "C#"],
-    description: "A competitive online fighting game built with Unity and C#."
+    title: "Music Portfolio", 
+    category: "Web Development", 
+    image: "/assets/Port_P4.png", 
+    link: "https://dainsounds.netlify.app/",
+    buzzwords: ["HTML", "CSS"],
+    description: "A Music Portfolio website purely out of HTML and CSS. It was one of my starting Projects that I gonna rebuild in the future."
   },
   { 
     id: 5, 
-    title: "DSM.", 
-    category: "web design", 
-    image: "/assets/images/project-5.png", 
-    link: "https://dsm.example.com",
-    buzzwords: ["Branding", "Typography", "UX/UI"],
-    description: "A digital style guide for modern branding and typography."
+    title: "Coreborn", 
+    category: "Game Development", 
+    image: "/assets/Port_P5.png", 
+    link: "https://store.steampowered.com/app/1926090/Coreborn/",
+    buzzwords: ["Sound Production", "Community Support", "UX/UI"],
+    description: "Created whole Soundscape of a multiplayer Game project and smaller games (OST,SFX,Atmo, Mix&Master)."
   },
   { 
     id: 6, 
+    title: "dain.", 
+    category: "Music Production", 
+    image: "/assets/Port_P6.png", 
+    link: "https://open.spotify.com/artist/0WGxgRurCUtZPILs08KznX?si=6utY-W1TTUq4PUvZhMsPQg",
+    buzzwords: ["Music Production", "Ableton", "Marketing"],
+    description: "Main Artist Name for LoFi and Synthwave"
+  },
+  { 
+    id: 7, 
     title: "MetaSpark", 
-    category: "web design", 
-    image: "/assets/images/project-6.png", 
-    link: "https://metaspark.example.com",
-    buzzwords: ["Marketing", "SEO", "Analytics"],
-    description: "A comprehensive SEO and marketing dashboard with real-time analytics."
+    category: "Music Production", 
+    image: "/assets/Port_P7.png", 
+    link: "https://open.spotify.com/artist/3dNmdZN1skt8fVuLMDECwl?si=bjScHszvSGWFZ1nKseROnw",
+    buzzwords: ["Music Production", "Ableton", "Marketing"],
+    description: "Toyou is the alias for Club Music."
+  },
+  { 
+    id: 8, 
+    title: "MetaSpark", 
+    category: "Music Production", 
+    image: "/assets/Port_P8.png", 
+    link: "https://open.spotify.com/artist/1PclBjYMDv5llwo1JmTooN?si=qk773ZtWTGy_SLH04fWLAA",
+    buzzwords: ["Music Production", "Ableton", "Marketing"],
+    description: "Duo Projects - won multiple Remix contests. Funky House is the main genre."
   }
 ];
 
@@ -80,7 +98,7 @@ const Portfolio = () => {
       {/* Filter Buttons */}
       <section className="projects">
         <ul className="filter-list">
-          {["all", "web design", "applications", "web development"].map((category) => (
+          {["all", "Web Development", "Game Development", "Music Production"].map((category) => (
             <li key={category} className="filter-item">
               <button
                 className={selectedCategory === category ? "active" : ""}

@@ -1,7 +1,7 @@
 "use client";
 
 import { FaChevronDown, FaGithub } from "react-icons/fa";
-import { FaBluesky, FaDiscord } from "react-icons/fa6";
+import { FaBluesky, FaDiscord, FaSpotify } from "react-icons/fa6";
 import { CiMail, CiLinkedin, CiLocationOn } from "react-icons/ci";
 import { VscGithubAlt } from "react-icons/vsc";
 import { useState } from "react";
@@ -19,7 +19,7 @@ const Sidebar = () => {
     <aside className={`sidebar ${isSidebarOpen ? "active" : ""}`} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="/assets/DainAvatar.jpg" alt="Richard Hanrick" width={80} className="avatar-box"/>
+          <img src="/assets/Avatar.png" alt="Richard Hanrick" width={80} className="avatar-box"/>
         </figure>
 
         <div className="info-content">
@@ -93,6 +93,12 @@ const Sidebar = () => {
           <li className="social-item">
             <a href="https://discordapp.com/users/246708539182022656" className="social-link">
             <FaDiscord name="logo-discord"></FaDiscord>
+            </a>
+          </li>
+
+          <li className="social-item">
+            <a href="https://open.spotify.com/artist/0WGxgRurCUtZPILs08KznX?si=r5xMkFnSS2a9Uz3ABzpiwQ" className="social-link">
+            <FaSpotify name="logo-spotify"></FaSpotify>
             </a>
           </li>
 

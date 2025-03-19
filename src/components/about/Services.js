@@ -1,83 +1,53 @@
-import { Md10K, MdDraw, MdMobileFriendly } from "react-icons/md"
-import { GoFileCode } from "react-icons/go"
-import { CgMusicSpeaker } from "react-icons/cg"
+import { MdDraw, MdMobileFriendly } from "react-icons/md";
+import { GoFileCode } from "react-icons/go";
+import { CgMusicSpeaker } from "react-icons/cg";
+
+const services = [
+  {
+    title: "Web Design",
+    description:
+      "The most modern and high-quality design made at a professional level.",
+    icon: <MdDraw size={50} className="service-icon shimmer-effect" />,
+  },
+  {
+    title: "Web Development",
+    description:
+      "High-quality development of sites at the professional level.",
+    icon: <GoFileCode size={50} className="service-icon shimmer-effect" />,
+  },
+  {
+    title: "Mobile Friendly",
+    description:
+      "Mobile first? Yes, but always have the focus on all scales!",
+    icon: <MdMobileFriendly size={50} className="service-icon shimmer-effect" />,
+  },
+  {
+    title: "Sound Design",
+    description:
+      "Whenever you need a sound solution, I can create it! From UI sounds to full compositions.",
+    icon: <CgMusicSpeaker size={50} className="service-icon shimmer-effect" />,
+  },
+];
 
 const Services = () => {
   return (
     <section className="service">
+      <h3 className="h3 service-title">What I'm Doing</h3>
 
-          <h3 className="h3 service-title">What i'm doing</h3>
+      <ul className="service-list">
+        {services.map((service, index) => (
+          <li key={index} className="service-item">
+            <div className="service-icon-box">{service.icon}</div>
 
-          <ul className="service-list">
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">{service.title}</h4>
+              <p className="service-item-text">{service.description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
 
-            <li className="service-item">
-
-              <div className="service-icon-box">
-                <MdDraw width="40"/>
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web design</h4>
-
-                <p className="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li className="service-item">
-
-              <div className="service-icon-box">
-                <GoFileCode width="40"/>
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web development</h4>
-
-                <p className="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li className="service-item">
-
-              <div className="service-icon-box">
-                <MdMobileFriendly  width="40"/>
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Mobile apps</h4>
-
-                <p className="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li className="service-item">
-
-              <div className="service-icon-box">
-                <CgMusicSpeaker  width="40"/>
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Photography</h4>
-
-                <p className="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-  )
-}
-
-export default Services
+export default Services;
