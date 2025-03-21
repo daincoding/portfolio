@@ -8,7 +8,7 @@ import { FaEye } from "react-icons/fa";
 const projects = [
   { 
     id: 1, 
-    title: "Hitless Stats - (WIP GitHub Only)", 
+    title: "Hitless Stats - (WIP GitHub Only - Currently Test Deployments)", 
     category: "Web Development", 
     image: "/assets/Port_P1.png", 
     link: "https://github.com/daincoding/hitless-stats",
